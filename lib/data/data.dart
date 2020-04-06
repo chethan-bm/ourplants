@@ -1,79 +1,63 @@
-import 'package:ourplants/data/top_categories_model.dart';
-List<TopCategoriesModel> getTopCategoriesData(){
+import 'package:ourplants/model/explore_model.dart';
+import 'package:ourplants/model/item_model.dart';
 
-  List<TopCategoriesModel> topCategories = new List();
-  TopCategoriesModel topCategoriesModel = new TopCategoriesModel();
-
+List<exploreModel> getExploreData() {
+  List<exploreModel> exploredata = new List();
+  exploreModel exModel = new exploreModel();
   //1
-  topCategoriesModel.imgAssetPath = "images/plant01.png";
-  topCategoriesModel.label = "Regular Gift";
-
-  topCategories.add(topCategoriesModel);
-  topCategoriesModel = new TopCategoriesModel();
+  exModel.productName = "Lorem Ipsum Dammy Plants";
+  exModel.price = "\$200";
+  exModel.size = "Medium";
+  exModel.color = "Aloevera";
+  exModel.imgURL = "images/plant0.png";
+  exploredata.add(exModel);
+  exModel = new exploreModel();
 
   //2
-  topCategoriesModel.imgAssetPath = "images/plant01.png";
-  topCategoriesModel.label = "Regular Gift";
+  exModel.productName = "Lorem Ipsum Dammy Plants";
+  exModel.price = "\$150";
+  exModel.size = "Medium";
+  exModel.color = "Gbit";
+  exModel.imgURL = "images/plant1.png";
+  exploredata.add(exModel);
+  exModel = new exploreModel();
 
-  topCategories.add(topCategoriesModel);
-  topCategoriesModel = new TopCategoriesModel();
+  //3
+  exModel.productName = "Lorem Ipsum Dammy Plants";
+  exModel.price = "\$250";
+  exModel.size = "Medium";
+  exModel.color = "Giman";
+  exModel.imgURL = "images/plant2.png";
+  exploredata.add(exModel);
+  exModel = new exploreModel();
 
-  topCategoriesModel.imgAssetPath = "images/plant01.png";
-  topCategoriesModel.label = "Regular Gift";
+  return exploredata;
+}
 
-  topCategories.add(topCategoriesModel);
-  topCategoriesModel = new TopCategoriesModel();
+List<itemModel> getItemData() {
+  List<itemModel> itemdata = new List();
+  itemModel itModel = new itemModel();
+  //1
+  itModel.price = "\$150";
+  itModel.productName = "Gbit";
+  itModel.imgURL = "images/plant1.png";
+  itemdata.add(itModel);
+  itModel = new itemModel();
 
-  topCategoriesModel.imgAssetPath = "images/plant01.png";
-  topCategoriesModel.label = "Regular Gift";
+  //2
+  itModel.price = "\$250";
+  itModel.productName = "Giman";
+  itModel.imgURL = "images/plant2.png";
+  itemdata.add(itModel);
+  itModel = new itemModel();
 
-  topCategories.add(topCategoriesModel);
-  topCategoriesModel = new TopCategoriesModel();
-
-  topCategoriesModel.imgAssetPath = "images/plant01.png";
-  topCategoriesModel.label = "Regular Gift";
-
-  topCategories.add(topCategoriesModel);
-  topCategoriesModel = new TopCategoriesModel();
-
-  topCategoriesModel.imgAssetPath = "images/plant01.png";
-  topCategoriesModel.label = "Regular Gift";
-
-  topCategories.add(topCategoriesModel);
-  topCategoriesModel = new TopCategoriesModel();
-
-  topCategoriesModel.imgAssetPath = "images/plant01.png";
-  topCategoriesModel.label = "Regular Gift";
-
-  topCategories.add(topCategoriesModel);
-  topCategoriesModel = new TopCategoriesModel();
-
-  topCategoriesModel.imgAssetPath = "images/plant01.png";
-  topCategoriesModel.label = "Regular Gift";
-
-  topCategories.add(topCategoriesModel);
-  topCategoriesModel = new TopCategoriesModel();
-
-  topCategoriesModel.imgAssetPath = "images/plant01.png";
-  topCategoriesModel.label = "Regular Gift";
-
-  topCategories.add(topCategoriesModel);
-  topCategoriesModel = new TopCategoriesModel();
-
-  topCategoriesModel.imgAssetPath = "images/plant01.png";
-  topCategoriesModel.label = "Regular Gift";
-
-  topCategories.add(topCategoriesModel);
-  topCategoriesModel = new TopCategoriesModel();
+  //3
+  itModel.price = "\$200";
+  itModel.productName = "Aloevera";
+  itModel.imgURL = "images/plant0.png";
+  itemdata.add(itModel);
+  itModel = new itemModel();
 
 
-  topCategoriesModel.imgAssetPath = "images/plant01.png";
-  topCategoriesModel.label = "Regular Gift";
-
-  topCategories.add(topCategoriesModel);
-  topCategoriesModel = new TopCategoriesModel();
-
-
-  return topCategories;
-
+  return itemdata;
 }
